@@ -161,15 +161,19 @@
 
   <!-- Código para animação do botão "Inscreva-se" -->
   <script>
-    const subscribeButton = document.getElementById('subscribe-button');
-    subscribeButton.addEventListener('mouseover', function() {
-      subscribeButton.style.transform = 'scale(1.1)';
-      subscribeButton.style.backgroundColor = '#4a90e2';
-    });
-    subscribeButton.addEventListener('mouseout', function() {
-      subscribeButton.style.transform = 'scale(1)';
-      subscribeButton.style.backgroundColor = '#58a6ff';
-    });
+   const subscribeButton = document.getElementById('subscribe-button');
+  
+  // Efeito de mouse sobre o botão
+  subscribeButton.addEventListener('mouseover', function() {
+    subscribeButton.style.transform = 'scale(1.1)';  // Aumenta o tamanho
+    subscribeButton.style.backgroundColor = '#FF5733';  // Muda a cor para vermelho
+  });
+  
+  // Efeito de mouse fora do botão
+  subscribeButton.addEventListener('mouseout', function() {
+    subscribeButton.style.transform = 'scale(1)';  // Restaura o tamanho original
+    subscribeButton.style.backgroundColor = '#58a6ff';  // Volta para a cor original
+  });
   </script>
 
 </body>
