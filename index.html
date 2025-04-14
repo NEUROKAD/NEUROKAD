@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NeuroKad - Inteligência Artificial</title>
   <style>
     body {
@@ -47,21 +47,6 @@
 
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .subscribe-btn {
-      background-color: #58a6ff;
-      color: #0d1117;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .subscribe-btn:hover {
-      background-color: #1f6feb;
     }
 
     .articles {
@@ -95,6 +80,24 @@
       color: #58a6ff;
       text-decoration: none;
     }
+
+    /* BOTÃO DE INSCRIÇÃO */
+    #subscribe-button {
+      background-color: #58a6ff;
+      color: #0d1117;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      margin-top: 1.5rem;
+    }
+
+    #subscribe-button:hover {
+      background-color: #ff3333;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
@@ -110,7 +113,10 @@
   <section class="hero">
     <h2>Explorando a Inteligência Artificial</h2>
     <p>Artigos, tutoriais e novidades sobre o universo da IA no seu dia a dia.</p>
-    <a class="subscribe-btn" href="https://www.youtube.com/@Neurokad" target="_blank">
+    
+    <a href="https://www.youtube.com/@Neurokad" 
+       target="_blank" 
+       id="subscribe-button">
       🎥 Inscreva-se no canal NeuroKad
     </a>
   </section>
@@ -130,50 +136,7 @@
     <p>Contato: <a class="email" href="mailto:neurokad@gmail.com">neurokad@gmail.com</a></p>
     <p>&copy; 2025 NeuroKad. Todos os direitos reservados.</p>
   </footer>
-  <!-- Código para renderizar artigos -->
-  <script>
-    const articles = [
-      {
-        title: "O que é Inteligência Artificial?",
-        content: "Um guia introdutório para entender como a IA está transformando o mundo, desde assistentes virtuais até carros autônomos."
-      },
-      {
-        title: "Como criar vídeos com IA",
-        content: "Veja como gerar vídeos com avatares, narração automática e muito mais usando ferramentas de IA."
-      }
-    ];
-
-    function renderArticles() {
-      const container = document.getElementById('articles-container');
-      articles.forEach(article => {
-        const articleDiv = document.createElement('div');
-        articleDiv.classList.add('article');
-        articleDiv.innerHTML = `
-          <h3>${article.title}</h3>
-          <p>${article.content}</p>
-        `;
-        container.appendChild(articleDiv);
-      });
-    }
-
-    renderArticles();
- <script>
-  const subscribeButton = document.getElementById('subscribe-button');
-  
-  // Efeito de mouse sobre o botão
-  subscribeButton.addEventListener('mouseover', function() {
-    subscribeButton.style.transform = 'scale(1.1)';  // Aumenta o tamanho
-    subscribeButton.style.backgroundColor = '#FF5733';  // Muda a cor para vermelho
-  });
-  
-  // Efeito de mouse fora do botão
-  subscribeButton.addEventListener('mouseout', function() {
-    subscribeButton.style.transform = 'scale(1)';  // Restaura o tamanho original
-    subscribeButton.style.backgroundColor = '#58a6ff';  // Volta para a cor original
-  });
-</script>
 </body>
 </html>
-</body>
-</html>
+
 
